@@ -501,7 +501,7 @@ height: 650px;
         height: 800px;
     }
 }
-@media (max-width:343px)
+@media (max-width:480px)
 {
   .navbar-toggler
   {
