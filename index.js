@@ -12,12 +12,12 @@ function caroche() {
 {
 
   $(".d-block").addClass("w-100");
-  $("#size").text(cw);
+ 
 }
 else
 {
   $(".d-block").removeClass("w-100");
-  $("#size").text(cw);
+ 
 }
 }
 
