@@ -4,157 +4,419 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit:no">
     <title>kadir construction</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </head>
-<body onbeforeunload="HandleBackFunctionality()">
+<body>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    .flexcontact
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    }
+    .contactimages
+    {
+      height: 50px;
+      width: 50px;
+    }
+    #contactus
+    {
+      margin-top: 200px;
+    }
+    </style>
+    
+    
+    
+    
+    <style>
+      @media(max-width:480px)
+    {
+      #content p{
+    font-size:1.2rem;
+    }
+    #contactus
+    {
+      margin-top: 200px;
+    }
+    .navbary
+    {
+      position: relative;
+      right:200px;
+    }
+    }
+    </style>
+    <style>
+      .myform
+        {
+            width: 90%;
+            border: 1px solid;
+            margin: auto;
+            
+    
+        }
+        #myform input ,textarea
+        {
+            width: 100%;
+            padding: 10px;
+            
+        }
+        label
+        {
+            display: block;
+        }
+    
+    #coni
+    {
+      text-align: center;
+      
+    }
+     
+    #aboutus
+    {
+      margin: 100px;
+    }
+    </style>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+  .text
+  {
+    font-family: 'PT Serif', serif;
+  }
+.bg{
+  background-color:white;
+}
+
+.imgneo{
+  border-radius: 25%;
+}
+.likea
+{
+  height: 250px;
+  width: 250px;
+}
+.lupas
+{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-prev,
+.carousel-next {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.menu-btn button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.menu-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-dropdown li {
+  padding: 10px 20px;
+}
+
+.menu-dropdown li:hover {
+  background-color: #eee;
+}
+
+.menu-wrapper:hover .menu-dropdown {
+  display: block;
+}
+.navbara
+{
+  background-color: white;
+  
+}
+
+.flexies
+{
+  display: flex;
+  
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
+  
+  .content h1
+  {
+    
+    text-align: center;
+    
+  }
+  
+  </style>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+  .content p{
+    text-align: center;
+   
+    font-size: 1.2rem;
+  }
+  
+  .navbara{
+   margin-bottom: auto
+  }
+  </style>
     <section id="home">
-        <div class="container-fluid white">    <!-- nav bar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary>
+        <div class="container-fluid bg">    <!-- nav bar-->
+    </div>
+
+   
+    
+<style>
+ 
+</style>
+<section>
+ <center><a class="navbar-brand" href="#"><img class="likea" src="logo.png" alt=""></a></center> 
+
+<div></div>
+<nav class="navbar  navbar-expand-lg   navbara  ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#home"><span id="logo">K A D H I R</span><br><span id="bio">Constructions & Facility Mangement Services</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
-
-
-        <div class="ses"><li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span id="ki">Services</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#construct1">Constructions</a></li>
-            <li><a class="dropdown-item" href="#fac">Facility services</a></li>
-
-
-          </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="About.html">About </a>
+          <a class="nav-link active" aria-current="page" href="#contactus">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact </a>
+          <a class="nav-link" href="#services1">Services</a>
         </li>
-
-      </form>
+        <li class="nav-item">
+          <a class="nav-link" href="#about006">About Us</a>
+        </li>
+      </ul>
+      
     </div>
   </div>
-</nav></div>
+</nav>
 
 
+
+</section>
+
+
+<section>
+
+  <div class="flexies">
+<div><img class="nevergiveup" id="roam" src="Slide1.jpg" width="" height="" alt=""></div>
+<div><img class="nevergiveup"src="Slide2.jpg" width="" height="" alt=""></div>
+<div ><img class="nevergiveup" src="Slide3.jpg"  width="" height="" alt=""></div>  
+</div>
+
+</section>
 <!--catchy ones-->
-<div class="container-fluid backsetter lupa">
-  <div class="catchy">
-  <div class="c1"><h1 class="ctext">let us make your dreams come true</h1>
-    <h1 class="c4">we build trust, satisfaction, services, last but not least we build constructions of your dreams...</h1></div>
-<div class="container-fluid caroanim">
-
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <div class="carousel-inner">
-          <center><div class="carousel-item active">
-            <img class="d-block w-50" src="Slide1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-50" src="Slide2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-50" src="Slide3.jpg" alt="Third slide">
-          </div></center>
-
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-      </div>
-</div>
-
-</div>
-
-
-</section>
-
-<section id="services1"><div class="services" id="construct1"><h1 class="sh">Services</h1><h2 id="constructions">Constructions</h2><p>Experience Our Top Notch quality of Building constructions, Our building options includes both  commercial and residential home services </p> <a href="https://docs.google.com/forms/d/1I8Qgr7G77OkqgP_n2zdFGDVQbUJf1fmFELsCwhhprHc/edit"><center><button type="button" class="btn btn-success"><span class=".sh">Book an Appointment</span></button></center></a><div class="conflex">
+<style>
+  #about006
+  {
+    margin-top: 200px;
+  }
+</style>
+<section id="services1"><div class="services" id="construct1"><p class=" text sh">Experience Our Top Notch quality of Building constructions ,Our building options includes both  commercial and residential home services </p> <div class="conflex text">
     <img class="conimg" src="drib.gif"><img class="conimg2" src="commercial.gif">
+    <p class="text">No worries, we'll take care everything from manpower to energy management, our services gives you wide range of facilities such as <br>Capital project planning and management, Maintenance and operations, Energy management, Occupancy and space managemen, Employee and occupant experience ,Emergency management and business continuity
+      , Real estate management and many more</p>
+      <div id="about006">
+      <p class="text ino">This is the Startup business started by Mr.kadhirasen in 2023, we value our customers opinions, our ultimate aim is not only building Constructions but also your trust, Our aim is to provide a flawless range of construction facility services and to build a unshakable marvels of your thoughts.</p>
 
-   </div>
+      </div>
+          <div id="contactus">
+            <div class="myform text">
 
-
-
-<center><br><a href="#home"><button type="button" id="lot" class="btn btn-success" ><span class=".sh">Go Back to top</span></button></a></center></section>
-
-</div>
+              <form id="myform" name="submit-to-google-sheet">
+                 
+                  <h1 id="coni" class="sh">Contact Us</h1>
+                  
+                  
+                  <div class="flexer text">
+                      
+                      <input type="text" id="name" name="name" placeholder="Your Name">
+                  
+                  </div>
+                  <div class="flexer text">
+                      
+                      <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number">
+                 
+                  </div>
+                  <div class="flexer text">
+                      
+                      <input type="email" id="email" name="email" placeholder="your email">
+                 
+                  </div>
+                  <div class="flexer text">
+                      
+                      <textarea id="message" cols="30" rows="5" name="message" placeholder="message"></textarea>
+                  
+                  </div>
+                  <div class="flexer"><input type="submit" value="Send" id="butt"></div>
+                  
+              </form>
+          </div>
+        
+        <div class="flexcontact text" id="flexcontacts">
+        <div class=""><a href="mailto:kadhirconstructionmanagement@gmail.com"><img class="contactimages" src="contact icons/mail.png" alt=""></a></div>
+        <div class=""><a href="tel:91 9940140162"><img class="contactimages" src="contact icons/phone.png" alt=""></a></div>
+        <div class=""><a href="https://wa.me/919940140162"><img class="contactimages" src="contact icons/whatsapp.png" alt=""></a></div>
+        
+          </div>  
+          <div><center><p style="font-size:12px">Copyright © 2023 All rights reserved - Kadhir Constructions
+            <br>Powered By GraceCode</p></center></div>
+          
 </section>
 
 
 
 
-    <section id="fac">
-      <div>
-        <h1 id="fchead">Construction Facilities</h1>
-        <div class="fcimg2">
-          <div>
-          <img src="m2.gif" class="f33">
-        </div>
-        <div>
-          <img src="cmf1.webp" class="f33">
-        </div>
-      </div>
-
-
-        <div class="fdiv">
-        <p class="fp" >No worries, we'll take care everything from manpower to energy management, our services gives you wide range of facilities such as,</p>
-        <div class="ulist">
-          <ul ><li>Capital project planning and management</li> <li>Maintenance and operations</li> <li>Energy management</li>
-            <li>Occupancy and space management</li>
-            <li>Employee and occupant experience</li>
-            <li>Emergency management and business continuity</li>
-            <li>Real estate management and many more</li>
-            </ul>
-          </div>
-          <center><a href="https://forms.gle/M7bGn12ep7DUn4Ly6"><button type="button" class="btn btn-success"><span class=".sh">Book an Appointment</span></button></center></a>
+    
+        
+       
+          
+          
 
 
 
 
 
-</div>
-
-<br>
-<div class="last"><a class="linki" href="#home">back to top</a></div>
 
 
-    </section>
+
+   
 
 
-<h1 id="size"></h1>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 <!--facilities-->
 
+<!-- 
+contacts -->
+
+<!-- contact style -->
 
 
 
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzhord3iiwTrIP5HW7sLHINnmtd9HjwazGfE6_dLwNU0pk79QgSNSp7ap0HsCRYFEvJ/exec'
+ const form = document.forms['submit-to-google-sheet']
 
+
+//secret recipe
+
+const myphone=document.querySelector('#mobile');
+const myname=document.querySelector('#name');
+   const mymail=document.querySelector('#email');
+   const err=document.querySelector('#error');
+     form.addEventListener('submit', e => {
+         let mess='';
+         if(myname.value.length<3)
+         {
+           mess+='Name must have more than two character';
+             alert(mess);
+             location.href="#myform";
+         } 
+         else if(myphone.value.length<4){
+             mess+='Invalid Number';
+             alert(mess);
+             location.href="#myform";
+
+
+
+         }
+         else
+         {
+             document.querySelector('#butt').setAttribute("disabled", "disabled");
+             e.preventDefault()
+       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+         .then(response => console.log('Success!', response))
+         .catch(error => console.error('Error!', error.message))
+         alert("Thank you for your submission, we will contact you soon");
+         document.querySelector('#butt').value="Done";
+         }
+     
+     });
+
+
+ 
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <script src="index.js"></script>
-
+<script src="caro.js"></script>
+<script src="final.js"></script>
 </body>
 </html>
